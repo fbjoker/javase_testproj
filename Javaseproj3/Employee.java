@@ -54,6 +54,9 @@ public class Employee {
 	public String toString() {
 		return "\t" + id + "\t" + name + "\t" + age + "\t" + salary ;
 	}
+	public String toString2() {
+		return "\t" + id + "\t" + name + "\t" + age + "\t" + salary ;
+	}
 	
 	
 	

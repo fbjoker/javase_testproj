@@ -33,7 +33,13 @@ public class Designer extends Programmer {
 		
 		return "\t" + this.getId() + "\t" + this.getName() +
 				"\t" + this.getAge() + "\t" + this.getSalary() +
-				"\t设计师\t"+this.getStatus()+"\t"+bonus+"\t\t"+this.getEquipment();
+				"\t设计师\t"+this.getStatus()+"\t"+bonus+"\t\t"+this.getEquipment().getDescrption();
+	}
+	public String toString2() {
+		
+		return "\t" +this.getMemberld() +"/"+this.getId() + "\t" + this.getName() +
+				"\t" + this.getAge() + "\t" + this.getSalary() +
+				"\t设计师"+"\t"+bonus;
 	}
 	
 	

@@ -2,7 +2,7 @@ package com.atguigu.team.domain;
 
 public class Pc implements Equipment {
 	private String model;
-	private double display;
+	private String display;
 	
 
 	public Pc() {
@@ -10,7 +10,7 @@ public class Pc implements Equipment {
 	}
 
 
-	public Pc(String model, double display) {
+	public Pc(String model, String display) {
 		super();
 		this.model = model;
 		this.display = display;
@@ -28,12 +28,12 @@ public class Pc implements Equipment {
 	}
 
 
-	public double getDisplay() {
+	public String getDisplay() {
 		return display;
 	}
 
 
-	public void setDisplay(double display) {
+	public void setDisplay(String display) {
 		this.display = display;
 	}
 

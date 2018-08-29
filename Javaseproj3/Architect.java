@@ -33,8 +33,15 @@ public class Architect extends Designer {
 		
 		return "\t" + this.getId() + "\t" + this.getName() +
 				"\t" + this.getAge() + "\t" + this.getSalary() +
-				"\t设计师\t"+this.getStatus()+"\t"+this.getBonus()+
-				"\t"+this.getStock()+"\t"+this.getEquipment();
+				"\t构架师\t"+this.getStatus()+"\t"+this.getBonus()+
+				"\t"+this.getStock()+"\t"+this.getEquipment().getDescrption();
+	}
+	public String toString2() {
+		
+		return "\t" +this.getMemberld() + "/"+this.getId() +"\t" + this.getName() +
+				"\t" + this.getAge() + "\t" + this.getSalary() +
+				"\t构架师"+"\t"+this.getBonus()+
+				"\t"+this.getStock();
 	}
 	
 }

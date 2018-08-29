@@ -4,7 +4,7 @@ import com.atguigu.team.service.Status;
 
 public class Programmer extends Employee {
 	private int memberld;
-	private Status status;
+	private Status status=Status.FREE;
 	private Equipment equipment;
 	
 	public Programmer() {
@@ -54,7 +54,13 @@ public class Programmer extends Employee {
 		
 		return "\t" + this.getId() + "\t" + this.getName() +
 				"\t" + this.getAge() + "\t" + this.getSalary() +
-				"\t程序员\t"+this.getStatus()+"\t\t\t"+this.getEquipment();
+				"\t程序员\t"+this.getStatus()+"\t\t\t"+this.getEquipment().getDescrption();
+	}
+	public String toString2() {
+		
+		return "\t" + this.getMemberld()+"/"+this.getId() + "\t" + this.getName() +
+				"\t" + this.getAge() + "\t" + this.getSalary() +
+				"\t程序员";
 	}
 	
 
